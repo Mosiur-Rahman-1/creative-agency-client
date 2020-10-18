@@ -1,0 +1,20 @@
+.work-slider-main {
+
+    height: 700px;
+    background-color: #111430;
+}
+.image-size{
+
+    width: 80%;
+    
+}
+.carousel-indicators {
+    margin-top: 20px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
