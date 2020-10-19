@@ -18,7 +18,7 @@ const Hero = () => {
                 </p>
                 <button className = "btn btn-dark px-5 py-2">Hire Us</button>
             </div>
-            <div  className = "col-md-6">
+            <div  className = "col-md-7 pl-5">
                 <img src={image} alt="hero banner image" className = "image-size pr-5"/>
             </div>
         </div>

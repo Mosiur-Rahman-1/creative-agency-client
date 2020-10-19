@@ -7,7 +7,7 @@ import workImageFive from '../../../images/carousel-5.png';
 
 const WorkSlider = () => {
     return (
-        <div className = "work-slider-main p-5">
+        <div className = "work-slider-main p-5" id = "portfolio">
             <h2 className = "p-5 text-white">Here are some of our works</h2>
             {/* <!--Carousel Wrapper--> */}
                 <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
