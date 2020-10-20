@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../../images/logos/logo.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faList, faCommentAlt } from '@fortawesome/free-solid-svg-icons';
+import { UserContext } from '../../../App';
 
 const PlaceOrder = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
     <div className="container-fluid" >
 
         <div className = "d-flex justify-content-between pt-4 px-4">
             <Link to="/"><img src={logo} alt="" height="38"/></Link>
             <h5>Order</h5>
-            <h5>user</h5>
+            <h5 id = "userName">{loggedInUser.name}</h5>
         </div>
         <div className="row admin-navbar">
 
@@ -25,7 +27,7 @@ const PlaceOrder = () => {
                 </ul>
             </div>
             <div className="col-md-6" style={{ height: '100vh', background: '#F4F7FC' }}>
-                <div className="bg-white p-5 " onsubmit="return false">
+                <div className="bg-white p-5 ">
                     <form >
                         <div className="row">
                             <div className="col form-group">

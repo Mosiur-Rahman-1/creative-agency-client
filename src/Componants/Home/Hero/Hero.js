@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import image from '../../../images/logos/Frame.png';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -16,7 +17,7 @@ const Hero = () => {
                 adipiscing elit. Purus commodo ipsum duis<br/>
                 laoreet maecenas. Feugiat
                 </p>
-                <button className = "btn btn-dark px-5 py-2">Hire Us</button>
+                <Link to = "/client/order"><button className = "btn btn-dark px-5 py-2">Hire Us</button></Link>
             </div>
             <div  className = "col-md-7 pl-5">
                 <img src={image} alt="hero banner image" className = "image-size pr-5"/>
