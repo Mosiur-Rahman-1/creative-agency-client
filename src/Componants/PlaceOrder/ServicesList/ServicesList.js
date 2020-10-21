@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../../images/logos/logo.png';
 import { Link } from 'react-router-dom';
 import webDesignImage from '../../../images/icons/service1.png';
 import graphicDesignImage from '../../../images/icons/service2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faList, faCommentAlt } from '@fortawesome/free-solid-svg-icons';
+import { UserContext } from '../../../App';
 
 const ServicesList = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
     <div className="container-fluid" >
 
     <div className = "d-flex justify-content-between pt-4 px-4">
         <Link to="/"><img src={logo} alt="" height="38"/></Link>
         <h5>Order</h5>
-        <h5>user</h5>
+        <h5>{loggedInUser.name}</h5>
     </div>
     <div className="row admin-navbar">
 
