@@ -1,10 +1,11 @@
-# **Creative Agency - A agency website that offers different web services**
+# **Creative Agency** <br/>
+# **A agency website that offers different web services**
 A creative agency website that offers different kinds of web services to the clients and let clients choose their specific projects according to their desired budget also allow them to provide the feedback based on their experience.<br/>
 
 Also include a Admin panel from where the admin can add new services also checkout all the services clients order and assign new admin if requires.
 
-Project live link: https://creative-agency-sites.netlify.app/ <br/>
-Project Code Server Side : https://github.com/Mosiur-Rahman-1/creative-agency-server
+**Project live link:** https://creative-agency-sites.netlify.app/ <br/>
+**Project Code Server Side:** https://github.com/Mosiur-Rahman-1/creative-agency-server
 
 - **Features:**
   - Clients can add and remove selected services.
